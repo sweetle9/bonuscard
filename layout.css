@@ -178,12 +178,13 @@
     color: rgba(196, 196, 196, 1)
   }
   .content {
-    max-width: 88.393vw;
-    margin-left: 6vw;
-    margin-right: 6vw;
+    max-width: 89.393vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     position: relative;
     display: block;
     height: 100%;
+    top:6vw;
   }
   .header_burger.active span {
     transform: scale(0);
@@ -205,7 +206,7 @@
   .footer {
     display: block;
     position: relative;
-    top:0;
+    top:7vw;
     margin-left:5.3vw;
     margin-right:5.3vw;
     height: 5vw;
@@ -245,7 +246,191 @@
     height: 80%;
     padding-left: 2vw;
   }
-  
+  input:focus {
+    outline: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  select {
+    -webkit-box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
+     -moz-box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
+          box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
+}
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  select {
+    width: 38.095vw;
+    height: 3.333vw;
+    position: relative;
+    display: block;
+    margin: 0.595vw auto;
+    /* border-radius: 0.238vw; */
+    margin-bottom: 0.833vw;
+    border: 0.060vw solid #ddd;
+    padding: 0vw 0.952vw;
+    font-size: 1.012vw;
+    background: white;
+    -webkit-appearance: none;
+  }
+  ::placeholder {
+    font-family: 'Montserrat'
+  }
+  h3 {
+    width: 38.095vw;
+    position: relative;
+    display: block;
+    margin: 0.595vw auto;
+  }
+  button {
+    margin: 0 auto;
+    display: block;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: 'Oswald';
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border: 0.060vw solid #07c;
+    border-radius: 0.238vw;
+    color: #fff;
+    cursor: pointer;
+    min-width: 1.786vw;
+    padding: 0.238vw 0.893vw;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .form-box {
+    width: 38.095vw;
+    position: relative;
+    display: flex;
+    margin: 0.595vw auto;
+    justify-content: space-between;
+  }
+  hr {
+    width: 100%;
+    margin: 0.893vw auto;
+    border: none;
+    border-top: 0.060vw solid #ddd;
+  }
+  form {
+    margin: 3.571vw auto;
+  }
+  .form-box p {
+    width: auto;
+    font-size: 1vw;
+    display: inline-block;
+  }
+  .box-inliner {
+    display: block;
+  }
+  .box-inliner > * {
+    display: inline-block;
+    margin-right: 1.190vw;
+  }
+  .security-box input {
+    margin-left: 1.5vw;
+  }
+  .security-box a {
+    margin-left: 1.5vw;
+  }
+  .refresh {
+    width: 20%;
+    height: 20%;
+    display: block;
+    position: relative;
+  }
+  input.form-split {
+    width: 18.452vw;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 0.833vw;
+  }
+  .box-col {
+    flex-direction: column;
+  }
+  .form-box input[type=checkbox] {
+    position: absolute;
+    display: block;
+    left: 0;
+  }
+  .form-box.box-col label {
+    top: 0.5vw;
+    position: relative;
+    font-family: 'Montserrat';
+    padding-left: 1.786vw;
+    padding-bottom: 1vw;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .form-box.box-col span {
+    font-size: 0.9vw;
+    font-family: 'Montserrat';
+  }
+  .box-inliner input {
+    margin-top: 0.5vw;
+    font-family: 'Montserrat';
+  }
+  .baton {
+    position: relative;
+    display: block;
+    top:4vw;
+    text-align: center;
+  }
+  .box-inliner label {
+    margin-top: 0.5vw;
+    font-family: 'Montserrat';
+  }
+  .security-box a {
+    text-decoration: none;
+    color: #aaa;
+  }
+  .form-box.biger p {
+    font-size: 1.2vw;
+    margin-bottom: 1.7vw;
+  }
+  .form-box span {
+    display: block;
+    width: 100%;
+    color: #aaa;
+    font-size: 0.655vw;
+  }
+  .security-box input {
+    width: 26.190vw;
+  }
+  .form-box.last p {
+    text-align: center;
+    font-size: 0.714vw;
+    line-height: 1.33341;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: 'Montserrat';
+    color: #666;
+  }
+  .first {
+    width: 100%;
+    display: block;
+    position: relative;
+    top:4vw;
+    height: 7vw;
+    margin-bottom: 6vw;
+  }
+  .square {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: rgba(162, 42, 47, 1);
+    height:7vw;
+    padding-top: 1.3vw;
+  }
+  .square h1 {
+    color: white;
+    text-align: center;
+  }
+
   p {
     font-family: 'Montserrat', sans-serif; font-size: 1.429vw; font-weight: normal; vertical-align: top; text-align: left; line-height: 1.7vw;
   }
@@ -254,4 +439,7 @@
   }
   h2 {
     font-family: 'Montserrat', sans-serif; font-size: 2.083vw; font-weight: medium; vertical-align: top; text-align: left;
+  }
+  h3 {
+    font-family: 'Montserrat', sans-serif; font-size: 1.083vw; font-weight: medium; vertical-align: top; text-align: left;
   }
