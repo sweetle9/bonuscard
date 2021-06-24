@@ -1245,7 +1245,7 @@
     input[type=tel],
     select {
       width: 88.095vw;
-      height: 12.333vw;
+      height: 10.333vw;
       position: relative;
       display: block;
       margin: 3vw auto;
