@@ -2,7 +2,10 @@
   .mobile {
     display: none;
   }
-  .baton_n {
+  .content_mobile {
+    display: none;
+  }
+  .baton_n, .baton_m {
     display: none;
   }
   .header_body_m {
@@ -24,9 +27,6 @@
     display: none;
   }
   .footer_n {
-    display: none;
-  }
-  .baton_m {
     display: none;
   }
 }
@@ -63,7 +63,7 @@
   .form-box, .form-box.box-inliner, .form-box.box-col, .content {
     display: none;
   }
-  .mobile {
+  .content_mobile {
     display: none;
   }
   .sticky_element_m {
@@ -336,9 +336,6 @@
       width: 80%;
       height: 80%;
       padding-left: 2vw;
-    }
-    .baton_m {
-      display: none;
     }
   }
 @media (max-width: 1366px) {
@@ -616,6 +613,7 @@
     .baton_m {
       display: none;
     }
+
   }
 @media (max-width: 1280px) {
   .mobile {
@@ -1170,12 +1168,235 @@
     }
 }
 @media (max-width: 768px) {
+  .first_slide, .second_slide, .third_slide, .fourth_slide, .fifth_slide, .sixth_slide, .seventh_slide, .eight_slide {
+    display: none;
+  }
+  .baton_n {
+    display: none;
+  }
   .header {
     display: none;
   }
   .content_notepad {
     display: none;
   }
+  .notepad {
+    display: none;
+  }
+    input:focus {
+      outline: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=tel],
+    select {
+      -webkit-box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
+       -moz-box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
+            box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
+  }
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=tel],
+    select {
+      width: 88.095vw;
+      height: 13.333vw;
+      position: relative;
+      display: block;
+      margin: 3vw auto;
+      /* border-radius: 0.238vw; */
+      margin-bottom: 1vw;
+      border: 0.3vw solid rgba(162, 42, 47, 1);
+      padding: 0vw 0.952vw;
+      font-size: 2vw;
+      background: white;
+      -webkit-appearance: none;
+    }
+    ::placeholder {
+      font-family: 'Montserrat'
+    }
+    .content_mobile {
+        max-width: 89.393vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        position: relative;
+        display: block;
+        height: 100%;
+        top:11vw;
+      }
+    .form-box_m {
+      width: 88.095vw;
+      position: relative;
+      display: flex;
+      margin: 2vw auto;
+      justify-content: space-between;
+    }
+    .form-box_m.biger_m p {
+    font-size: 4.1vw;
+    margin-bottom: 1.7vw;
+    line-height: 4.5vw;
+    }
+    .form-box_m.biger_m {
+    font-size: 2.1vw;
+    margin-bottom: 1.7vw;
+    line-height: 1vw;
+    margin-top: 9vw;
+    }
+    .content_mobile h3 {
+      width: 38.095vw;
+      position: relative;
+      display: block;
+      margin: 0.595vw auto;
+      margin-left: 14.5vw;
+      font-size:2vw;
+      margin-top: -1vw;
+    }
+    button {
+      margin: 0 auto;
+      display: block;
+      line-height: 1.47059;
+      font-weight: 400;
+      letter-spacing: -.022em;
+      font-family: 'Oswald';
+      background-color: #0070c9;
+      background: linear-gradient(#42a1ec,#0070c9);
+      border: 0.060vw solid #07c;
+      border-radius: 0.238vw;
+      color: #fff;
+      cursor: pointer;
+      min-width: 1.786vw;
+      padding: 0.238vw 0.893vw;
+      text-align: center;
+      white-space: nowrap;
+    }
+    hr {
+      width: 100%;
+      margin: 0.893vw auto;
+      border: none;
+      border-top: 0.060vw solid #ddd;
+    }
+    form {
+      margin: 3.571vw auto;
+    }
+    .form-box_m p {
+      width: auto;
+      font-size: 2vw;
+      display: inline-block;
+      line-height: 2vw;
+    }
+    .box-inliner_m {
+      display: block;
+      margin-top: 2vw;
+    }
+    .box-inliner_m > * {
+      display: inline-block;
+      margin-right: 1.190vw;
+    }
+    .security-box_m input {
+      margin-left: 1.5vw;
+    }
+    .security-box_m a {
+      margin-left: 1.5vw;
+    }
+    .refresh_m {
+      width: 20%;
+      height: 20%;
+      display: block;
+      position: relative;
+    }
+    input.form-split_m {
+      width: 18.452vw;
+      display: inline-block;
+      margin: 0;
+      margin-bottom: 0.833vw;
+    }
+    .box-col_m {
+      flex-direction: column;
+    }
+    .form-box_m input[type=checkbox] {
+      position: absolute;
+      display: block;
+      left: 0;
+      transform: scale(2);
+      top: 0.5vw;
+    }
+    .form-box_m.box-col_m label {
+      font-size: 2vw;
+      top: 0.5vw;
+      position: relative;
+      font-family: 'Montserrat';
+      padding-left: 3.786vw;
+      padding-bottom: 1vw;
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: 1vw;
+    }
+    .form-box_m.box-col_m span {
+      font-size: 0.9vw;
+      font-family: 'Montserrat';
+      font-size: 1.5vw;
+    }
+    .box-inliner_m input {
+      margin-top: 0.5vw;
+      font-family: 'Montserrat';
+      transform: scale(2);
+      margin-right: 0.7vw;
+    }
+    .baton_m {
+      position: relative;
+      display: block;
+      top:6vw;
+      text-align: center;
+    }
+    .box-inliner_m label {
+      margin-top: 0.5vw;
+      font-family: 'Montserrat';
+      font-size: 2vw
+    }
+    .security-box_m a {
+      text-decoration: none;
+      color: #aaa;
+    }
+    .form-box_m span {
+      display: block;
+      width: 100%;
+      color: #aaa;
+      font-size: 0.655vw;
+    }
+    .security-box_m input {
+      width: 26.190vw;
+    }
+    .form-box_m.last_m p {
+      text-align: center;
+      font-size: 0.714vw;
+      line-height: 1.33341;
+      font-weight: 400;
+      letter-spacing: -.01em;
+      font-family: 'Montserrat';
+      color: #666;
+    }
+    .first_m {
+      width: 100%;
+      display: block;
+      position: relative;
+      top:4vw;
+      height: 7vw;
+      margin-bottom: 15vw;
+    }
+    .square_m {
+      width: 100%;
+      display: block;
+      position: relative;
+      background-color: rgba(162, 42, 47, 1);
+      height:14vw;
+      padding-top: 2.6vw;
+    }
+    .square_m h1 {
+      color: white;
+      text-align: center;
+      font-size: 8vw;
+    }
   .header_m {
     display: block;
     position: fixed;
@@ -1360,266 +1581,7 @@
     transform: rotate(-45deg);
     bottom: 2.7vw;
   }
-  .content_mobile {
-      max-width: 89.393vw;
-      margin-left: 5vw;
-      margin-right: 5vw;
-      position: relative;
-      display: block;
-      height: 100%;
-      top:6vw;
-    }
-    input:focus {
-      outline: none;
-    }
-    input[type=text],
-    input[type=email],
-    input[type=password],
-    input[type=tel],
-    select {
-      -webkit-box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
-       -moz-box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
-            box-shadow: 0 0 0 0.1vw rgba(162, 42, 47, 1);
-  }
-    input[type=text],
-    input[type=email],
-    input[type=password],
-    input[type=tel],
-    select {
-      width: 60.095vw;
-      height: 5.333vw;
-      position: relative;
-      display: block;
-      margin: 1vw auto;
-      /* border-radius: 0.238vw; */
-      margin-bottom: 1vw;
-      border: 0.060vw solid #ddd;
-      padding: 0vw 0.952vw;
-      font-size: 2vw;
-      background: white;
-      -webkit-appearance: none;
-    }
-    ::placeholder {
-      font-family: 'Montserrat'
-    }
-    .form-box_m {
-      width: 60.095vw;
-      position: relative;
-      display: flex;
-      margin: 2vw auto;
-      justify-content: space-between;
-    }
-    .form-box_m.biger_m p {
-    font-size: 2.1vw;
-    margin-bottom: 1.7vw;
-    line-height: 2.5vw;
-    }
-    .form-box_m.biger_m {
-    font-size: 2.1vw;
-    margin-bottom: 1.7vw;
-    line-height: 1vw;
-    margin-top: 9vw;
-    }
-    .content_notepad h3 {
-      width: 38.095vw;
-      position: relative;
-      display: block;
-      margin: 0.595vw auto;
-      margin-left: 14.5vw;
-      font-size:2vw;
-      margin-top: -1vw;
-    }
-    button {
-      margin: 0 auto;
-      display: block;
-      line-height: 1.47059;
-      font-weight: 400;
-      letter-spacing: -.022em;
-      font-family: 'Oswald';
-      background-color: #0070c9;
-      background: linear-gradient(#42a1ec,#0070c9);
-      border: 0.060vw solid #07c;
-      border-radius: 0.238vw;
-      color: #fff;
-      cursor: pointer;
-      min-width: 1.786vw;
-      padding: 0.238vw 0.893vw;
-      text-align: center;
-      white-space: nowrap;
-    }
-    hr {
-      width: 100%;
-      margin: 0.893vw auto;
-      border: none;
-      border-top: 0.060vw solid #ddd;
-    }
-    form {
-      margin: 3.571vw auto;
-    }
-    .form-box_m p {
-      width: auto;
-      font-size: 2vw;
-      display: inline-block;
-      line-height: 2vw;
-    }
-    .box-inliner_m {
-      display: block;
-      margin-top: 2vw;
-    }
-    .box-inliner_m > * {
-      display: inline-block;
-      margin-right: 1.190vw;
-    }
-    .security-box_m input {
-      margin-left: 1.5vw;
-    }
-    .security-box_m a {
-      margin-left: 1.5vw;
-    }
-    .refresh_m {
-      width: 20%;
-      height: 20%;
-      display: block;
-      position: relative;
-    }
-    input.form-split_m {
-      width: 18.452vw;
-      display: inline-block;
-      margin: 0;
-      margin-bottom: 0.833vw;
-    }
-    .box-col_m {
-      flex-direction: column;
-    }
-    .form-box_m input[type=checkbox] {
-      position: absolute;
-      display: block;
-      left: 0;
-      transform: scale(2);
-      top: 0.5vw;
-    }
-    .form-box_m.box-col_m label {
-      font-size: 2vw;
-      top: 0.5vw;
-      position: relative;
-      font-family: 'Montserrat';
-      padding-left: 3.786vw;
-      padding-bottom: 1vw;
-      max-width: 100%;
-      max-height: 100%;
-      margin-left: 1vw;
-    }
-    .form-box_m.box-col_m span {
-      font-size: 0.9vw;
-      font-family: 'Montserrat';
-      font-size: 1.5vw;
-    }
-    .box-inliner_m input {
-      margin-top: 0.5vw;
-      font-family: 'Montserrat';
-      transform: scale(2);
-      margin-right: 0.7vw;
-    }
-    .baton_m {
-      position: relative;
-      display: block;
-      top:6vw;
-      text-align: center;
-    }
-    .box-inliner_m label {
-      margin-top: 0.5vw;
-      font-family: 'Montserrat';
-      font-size: 2vw
-    }
-    .security-box_m a {
-      text-decoration: none;
-      color: #aaa;
-    }
-    .form-box_m span {
-      display: block;
-      width: 100%;
-      color: #aaa;
-      font-size: 0.655vw;
-    }
-    .security-box_m input {
-      width: 26.190vw;
-    }
-    .form-box_m.last_m p {
-      text-align: center;
-      font-size: 0.714vw;
-      line-height: 1.33341;
-      font-weight: 400;
-      letter-spacing: -.01em;
-      font-family: 'Montserrat';
-      color: #666;
-    }
-    .first_m {
-      width: 100%;
-      display: block;
-      position: relative;
-      top:4vw;
-      height: 7vw;
-      margin-bottom: 6vw;
-    }
-    .square_m {
-      width: 100%;
-      display: block;
-      position: relative;
-      background-color: rgba(162, 42, 47, 1);
-      height:9vw;
-      padding-top: 1.3vw;
-    }
-    .square_m h1 {
-      color: white;
-      text-align: center;
-      font-size: 6vw;
-    }
-    .footer {
-      display: none;
-    }
-    .footer_m {
-      display: block;
-      position: relative;
-      top:0;
-      margin-top: 12vw;
-      margin-left:5.3vw;
-      margin-right:5.3vw;
-      height: 5vw;
-    }
-    .footer_body_m {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
-      padding-bottom: 3vw;
-    }
-    .footer_body_m a {
-      text-decoration: none;
-      color: black;
-      font-family: 'Montserrat';
-      font-weight: normal;
-      font-size: 1.5vw;
-    }
-    .icons_m {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 6vw;
-      margin-right: 11vw;
-      align-items: flex-end;
-      height: 100%;
-      margin-left: 7vw;
-    }
-    .icons_m img {
-      width: 80%;
-      height: 80%;
-      padding-left: 2vw;
-    }
-    .baton_n {
-      display: none;
-    }
-}
+
 @media (max-width: 320px) {
   .first_slide, .second_slide, .third_slide, .fourth_slide, .fifth_slide, .sixth_slide, .seventh_slide, .eight_slide {
     display: none;
