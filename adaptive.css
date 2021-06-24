@@ -38,6 +38,9 @@
   .footer_n {
     display: none;
   }
+  .footer_m {
+    display: none;
+  }
 }
 @media (max-width: 1680px) {
   .mobile {
@@ -71,6 +74,9 @@
     display: none;
   }
   .baton_m {
+    display: none;
+  }
+  .footer_m {
     display: none;
   }
 }
@@ -355,6 +361,9 @@
     .baton_m {
       display: none;
     }
+    .footer_m {
+      display: none;
+    }
   }
 @media (max-width: 1366px) {
   .mobile {
@@ -634,7 +643,9 @@
     .baton_m {
       display: none;
     }
-
+    .footer_m {
+      display: none;
+    }
   }
 @media (max-width: 1280px) {
   .mobile {
@@ -912,6 +923,9 @@
       padding-left: 2vw;
     }
     .baton_m {
+      display: none;
+    }
+    .footer_m {
       display: none;
     }
   }
@@ -1193,6 +1207,9 @@
     .baton_m {
       display: none;
     }
+    .footer_m {
+      display: none;
+    }
 }
 @media (max-width: 768px) {
   .first_slide, .second_slide, .third_slide, .fourth_slide, .fifth_slide, .sixth_slide, .seventh_slide, .eight_slide {
@@ -1228,7 +1245,7 @@
     input[type=tel],
     select {
       width: 88.095vw;
-      height: 13.333vw;
+      height: 12.333vw;
       position: relative;
       display: block;
       margin: 3vw auto;
@@ -1236,7 +1253,7 @@
       margin-bottom: 1vw;
       border: 0.3vw solid rgba(162, 42, 47, 1);
       padding: 0vw 0.952vw;
-      font-size: 2vw;
+      font-size: 3.2vw;
       background: white;
       -webkit-appearance: none;
     }
@@ -1275,8 +1292,8 @@
       position: relative;
       display: block;
       margin: 0.595vw auto;
-      margin-left: 14.5vw;
-      font-size:2vw;
+      margin-left: 0.5vw;
+      font-size:3.2vw;
       margin-top: -1vw;
     }
     button {
@@ -1308,9 +1325,9 @@
     }
     .form-box_m p {
       width: auto;
-      font-size: 2vw;
+      font-size: 3.2vw;
       display: inline-block;
-      line-height: 2vw;
+      line-height: 3.2vw;
     }
     .box-inliner_m {
       display: block;
@@ -1345,11 +1362,11 @@
       position: absolute;
       display: block;
       left: 0;
-      transform: scale(2);
-      top: 0.5vw;
+      transform: scale(1);
+      top: 1vw;
     }
     .form-box_m.box-col_m label {
-      font-size: 2vw;
+      font-size: 3.2vw;
       top: 0.5vw;
       position: relative;
       font-family: 'Montserrat';
@@ -1360,26 +1377,26 @@
       margin-left: 1vw;
     }
     .form-box_m.box-col_m span {
-      font-size: 0.9vw;
       font-family: 'Montserrat';
-      font-size: 1.5vw;
+      font-size: 2.3vw;
+      margin-top: 0.4vw;
     }
     .box-inliner_m input {
       margin-top: 0.5vw;
       font-family: 'Montserrat';
-      transform: scale(2);
+      transform: scale(1);
       margin-right: 0.7vw;
     }
     .baton_m {
       position: relative;
       display: block;
-      top:6vw;
+      top:13vw;
       text-align: center;
     }
     .box-inliner_m label {
       margin-top: 0.5vw;
       font-family: 'Montserrat';
-      font-size: 2vw
+      font-size: 3.2vw;
     }
     .security-box_m a {
       text-decoration: none;
@@ -1608,9 +1625,71 @@
     transform: rotate(-45deg);
     bottom: 2.7vw;
   }
-
+  .footer_m {
+    display: block;
+    position: relative;
+    top:17vw;
+    margin-top: 3vw;
+    margin-left:5.3vw;
+    margin-right:5.3vw;
+    height: 5vw;
+  }
+  .footer_container_m {
+    position: relative;
+    width: 100%;
+    top:0;
+    left:0;
+    height: 5vw;
+  }
+  .footer_body_m {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 3vw;
+  }
+  .footer_body_m a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 2vw;
+  }
+  .icons_m {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 7.7vw;
+    margin-right: 11vw;
+    align-items: flex-end;
+    height: 100%;
+    margin-left: 7vw;
+  }
+  .icons_m img {
+    width: 80%;
+    height: 80%;
+    padding-left: 2vw;
+  }
+  .footer_n {
+    display: none;
+  }
+}
 @media (max-width: 320px) {
   .first_slide, .second_slide, .third_slide, .fourth_slide, .fifth_slide, .sixth_slide, .seventh_slide, .eight_slide {
     display: none;
   }
+  .box-inliner_m input {
+    margin-top: 0.5vw;
+    font-family: 'Montserrat';
+    transform: scale(1);
+    margin-right: 0vw;
   }
+  .form-box_m input[type=checkbox] {
+    position: absolute;
+    display: block;
+    left: 0;
+    transform: scale(1);
+    top: 1vw;
+}
+}
