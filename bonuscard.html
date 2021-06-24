@@ -17,13 +17,20 @@
   $('.header_menu').click(function(){
      $('.header_burger, .header_menu').removeClass('active');
   });
+  $(".header_burger_m").click(function() {
+  $(".header_burger_m, .header_menu_m").toggleClass("active");
+  });
+  $('.header_menu_m').click(function(){
+     $('.header_burger_m, .header_menu_m').removeClass('active');
+  });
+
 
   });
   </script>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+    <header class="header">
     <div class="container">
     <div class="header_body">
       <a href="#" class="header_logo">
@@ -85,6 +92,70 @@
       </div>
       </div>
       </header>
+      <header class="header_m">
+        <div class="container_m">
+          <div class="header_body_m">
+            <a href="#" class="header_logo_m">
+              <img src="images/text_logo.svg" alt="">
+            </a>
+            <a href="#" class="header_logo_2_m">
+              <img src="images/sausage_logo.svg" alt="">
+            </a>
+            <div class="header_burger_m">
+              <span></span>
+            </div>
+            <nav class="header_menu_m">
+              <ul class="header_list_m">
+              <div class="flex_menu_1_m">
+                <div class="upper_menu_m" id='marg'>
+                <li>
+                  <a href="https://sweetle9.github.io/KruchinaArlekina/mainpage.html" class="header_link_m">О НАС</a>
+                </li>
+                </div>
+              <div class="lower_menu_m">
+                  <li>
+                  <a href="https://sweetle9.github.io/Book/book.html" class="header_link_m lower_m">КНИГА</a>
+                </li>
+                <li>
+                  <a href="https://sweetle9.github.io/building/building.html" class="header_link_m lower_m">ЗДАНИЕ</a>
+                </li>
+                <li>
+                  <a href="https://sweetle9.github.io/reviews/reviews.html" class="header_link_m lower_m">ОТЗЫВЫ</a>
+                </li>
+              </div>
+              </div>
+                <div class="flex_menu_2_m">
+                <div class='upper_menu_m'>
+                    <li>
+                    <a href="https://sweetle9.github.io/events/events.html" class="header_link_m">МЕРОПРИЯТИЯ</a>
+                  </li>
+                </div>
+                </div>
+                  <div class="flex_menu_3_m">
+                <div class="upper_menu_m" id='marg'>
+                    <li>
+                    <a href="#" class="header_link_m">АКЦИИ</a>
+                  </li>
+                </div>
+                  <div class="lower_menu_m">
+                    <li>
+                      <a href="https://sweetle9.github.io/game/game.html" class="header_link_m lower_m">ИГРА</a>
+                    </li>
+                    <li>
+                      <a href="https://sweetle9.github.io/bonuscard/bonuscard.html" class="header_link_m lower_m">БОНУСЫ</a>
+                    </li>
+                  </div>
+                  </div>
+              </ul>
+              <div class="header_contact_m">
+                <a href="#" class="header_phone_number_m">8 (812) 10250-50</a>
+                <a href="#" class="header_adress_m">ул. Караванная 16/14, Санкт Петербург</a>
+                <a href="#" class="header_mail_m">kruchinaarlekina</a>
+                </div>
+            </nav>
+            </div>
+          </div>
+          </header>
       <div class="content">
         <div class="first">
           <div class="square">
@@ -189,7 +260,63 @@
                     <label for=""><input type="checkbox" name="" value="">Рецепты<span>Еженедельно мы рассылаем интересные и не сложные рецепты от нашего повара, чтобы не имея возможность призодить в наш ресторан, вы смогли бы приготовить вкусные блюда у себя дома.</span></label>
                 </div>
           </div>
+          <div class="content_mobile">
+              <div class="first_m">
+                <div class="square_m">
+                  <h1>БОНУСНАЯ КАРТА</h1>
+                </div>
+              </div>
+              <form class="" action="index.html" method="post">
+                <div class='form-box_m biger_m'>
+              <p>Получение бонусной карты ресторана даёт скидку 10% на любой заказ от сумы 1500 рублей. Также, <br> со скидками,по ней можно приобрести билеты <br> на некоторые мероприятия. </p>
+                </div>
+              <div class='form-box_m'>
+              <input class='form-split' type="text" name="" value="" placeholder="Имя">
+              <input class='form-split' type="text" name="" value="" placeholder="Фамилия">
+              </div>
+                  <h3>ГОРОД / РЕГИОН</h3>
+                  <select class="select_m" name="country">
+                    <option value="United States">Санкт-Петербург</option>
+                    <option value="Russia">Москва</option>
+                    <option value="Russia">Ленинградская Область</option>
+                    <option value="Russia">Московская Область</option>
+                  </select>
+                  <input class='input_text_m' type="text" name="" value="" placeholder="Дата рождения">
+                  <hr>
+                  <input class='input_email_m' type="email" name="" value="" placeholder="name@example.ru">
+                  <input class='input_password_m' type="password" name="" value="" placeholder="Пароль">
+                  <input class='input_password2_m' type="password" name="" value="" placeholder="Подтверждение пароля">
+                  <hr>
+                  <select class="phoneprefix_m" name="phoneprefix">
+                    <option value="United States">(812) Санкт-Петербург</option>
+                    <option value="Russia">(495) Москва</option>
+                    <option value="Russia">(813) Ленинградская Область</option>
+                    <option value="Russia">(496) Московская Область</option>
+                  </select>
+                  <input class='input_tel_m' type="tel" name="" value="" placeholder="Номер телефона">
+                  <div class='form-box_m'>
+              <p>Подтвердите свой номер телефона для того, чтобы привязать вашу карту к нему.</p>
+                  </div>
+                <div class='form-box_m box-inliner_m'>
+              <p>Подтвердить: </p>
+              <div>
+              <input type="radio" name="phoneproof" value=""> <label for="">Текстовое сообщение</label>
+              </div>
+              <div>
+              <input type="radio" name="phoneproof" value=""> <label for="">Звонок</label>
+              </div>
+                </div>
+                  <hr>
+                <div class='form-box_m box-col_m'>
+                    <label for=""><input type="checkbox" name="" value="">Рассылка новостей<span>Получите самые актуальные новости от нашего ресторана (скидки, мероприятия, обновления в менью и т.д.).</span></label>
+                    <label for=""><input type="checkbox" name="" value="">Рецепты<span>Еженедельно мы рассылаем интересные и не сложные рецепты от нашего повара, чтобы не имея возможность призодить в наш ресторан, вы смогли бы приготовить вкусные блюда у себя дома.</span></label>
+                </div>
+          </div>
           <div class="baton_n">
+            <input type="image" src="images/baton.svg" name="saveForm" class="btTxt submit" id="saveForm" style='width: 25%;
+            height: 12%'>
+          </div>
+          <div class="baton_m">
             <input type="image" src="images/baton.svg" name="saveForm" class="btTxt submit" id="saveForm" style='width: 25%;
             height: 12%'>
           </div>
